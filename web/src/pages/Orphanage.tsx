@@ -3,13 +3,13 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo, FiArrowLeft } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { useHistory } from 'react-router-dom';
-import L from 'leaflet';
+import Leaflet from 'leaflet';
 
 import mapMarkerImg from '../images/map-marker.svg';
 
 import '../styles/pages/orphanage.css';
 
-const happyMapIcon = L.icon({
+const happyMapIcon = Leaflet.icon({
   iconUrl: mapMarkerImg,
 
   iconSize: [58, 68],
